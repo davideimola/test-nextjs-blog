@@ -72,7 +72,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-10 text-center text-xs leading-5 text-white">
-          &copy; 2023 Davide Imola All rights reserved.
+          &copy; {new Date().getFullYear()} Davide Imola All rights reserved.
         </p>
       </div>
     </footer>

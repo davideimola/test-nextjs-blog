@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "~/components/Footer";
+import Newsletter from "~/components/Newsletter";
 
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -27,6 +28,7 @@ export default function Home() {
         <Header />
         <Hero />
         <LastArticles />
+        <Newsletter />
         <Footer />
       </main>
     </>
@@ -36,7 +38,7 @@ export default function Home() {
 function Hero() {
   return (
     <div className="relative isolate">
-      <div className="mx-auto max-w-7xl px-6 py-12 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-0">
+      <div className="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-0">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
           <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Davide Imola
