@@ -15,8 +15,6 @@ import Footer from "~/components/Footer";
 import Newsletter from "~/components/Newsletter";
 
 export default function Home() {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
   return (
     <>
       <Head>
@@ -98,7 +96,7 @@ function Hero() {
             width={316}
             height={684}
             className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
-            src="/davideimola-pc.png"
+            src="/davideimola.png"
             alt=""
           />
         </div>

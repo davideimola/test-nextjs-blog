@@ -70,21 +70,105 @@ function Hero() {
                   </div>
                   <div className="px-6 pb-14 pt-6">
                     <pre>
-                      <code>
-                        {`package main
-                       
-func main() {
-    davide := &Person{
-        Name:     "Davide Imola",
-        Age:      ${new Date().getFullYear() - 1995},
-        Location: "Verona, Italy",
-        Job:      "Software Engineer",
-    }
-    
-    if err := davide.Hello(); err != nil {
-        panic(err)
-    }
-}`}
+                      <code className="language-go code-highlight">
+                        <span className="code-line">
+                          <span className="token keyword">func</span>{" "}
+                          <span className="token function">main</span>
+                          <span className="token punctuation">(</span>
+                          <span className="token punctuation">)</span>{" "}
+                          <span className="token punctuation">{"{"}</span>
+                        </span>
+                        <br />
+                        <span className="code-line">
+                          {"   "}
+                          davide <span className="token operator">:=</span>{" "}
+                          <span className="token operator">&amp;</span>Person
+                          <span className="token punctuation">{"{"}</span>
+                        </span>
+                        <br />
+
+                        <span className="code-line">
+                          {"       "}
+                          Name<span className="token punctuation">:</span>
+                          {"     "}
+                          <span className="token string">
+                            {'"Davide Imola"'}
+                          </span>
+                          <span className="token punctuation">,</span>
+                        </span>
+                        <br />
+
+                        <span className="code-line">
+                          {"       "}
+                          Age<span className="token punctuation">:</span>
+                          {"      "}
+                          <span className="token number">28</span>
+                          <span className="token punctuation">,</span>
+                        </span>
+                        <br />
+
+                        <span className="code-line">
+                          {"       "}
+                          Location<span className="token punctuation">
+                            :
+                          </span>{" "}
+                          <span className="token string">
+                            {'"Verona, Italy"'}
+                          </span>
+                          <span className="token punctuation">,</span>
+                        </span>
+                        <br />
+
+                        <span className="code-line">
+                          {"       "}
+                          Job<span className="token punctuation">:</span>
+                          {"      "}
+                          <span className="token string">
+                            {'"Software Engineer"'}
+                          </span>
+                          <span className="token punctuation">,</span>
+                        </span>
+                        <br />
+
+                        <span className="code-line">
+                          {"   "}
+                          <span className="token punctuation">{"}"}</span>
+                        </span>
+                        <br />
+                        <br />
+
+                        <span className="code-line">
+                          {"   "}
+                          <span className="token keyword">if</span> err{" "}
+                          <span className="token operator">:=</span> davide
+                          <span className="token punctuation">.</span>
+                          <span className="token function">Hello</span>
+                          <span className="token punctuation">(</span>
+                          <span className="token punctuation">)</span>
+                          <span className="token punctuation">;</span> err{" "}
+                          <span className="token operator">!=</span>{" "}
+                          <span className="token boolean">nil</span>{" "}
+                          <span className="token punctuation">{"{"}</span>
+                        </span>
+                        <br />
+
+                        <span className="code-line">
+                          {"       "}
+                          <span className="token function">panic</span>
+                          <span className="token punctuation">(</span>err
+                          <span className="token punctuation">)</span>
+                        </span>
+                        <br />
+
+                        <span className="code-line">
+                          {"   "}
+                          <span className="token punctuation">{"}"}</span>
+                        </span>
+                        <br />
+
+                        <span className="code-line">
+                          <span className="token punctuation">{"}"}</span>
+                        </span>
                       </code>
                     </pre>
                   </div>
